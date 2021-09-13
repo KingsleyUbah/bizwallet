@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin-left: 0;
+  padding: 0;
+  font-family: "rubik", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2 {
+  font-size: 40px;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.hero {
+  background-image: url(./images/3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  overflow: hidden;
+}
+
+.darken-bg {
+  background-image:linear-gradient(to right, black, rgba(0, 0, 0, 0.5));
+  height: 800px;
+}
+
+.navbar {
+  height: 70px;
+  padding: 0 30px;
+}
+
+.navbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  padding: 9px;
+  color: white;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #57CC99;
+}
+
+.navbar h1 {
+  font-family: "nunito", sans-serif;
+  font-size: 30px;
+  color: #57CC99;
+}
+
+.center {
+  margin: 100px 0;
+  text-align: left;
+}
+
+.center p {
+  width: 700px;
+}
+
+.greenify {
+  color: #57CC99;
+}
+
+.redify {
+  color: red;
+  text-decoration: line-through;
+}
+
+.app-stores {
+  margin-top: 60px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.store {
+  display: flex;
+  width: 180px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+.icon {
+  margin: 0 4px;
+}
+
+.supporting-text {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.facts {
+  background-color: white;
+  position: relative;
+  height: 2300px;
+  color: black;
+}
+
+.fact-section {
+  width: 95%;
+  height: 1800px;
+  background-color: #57CC99;
+  position: absolute;
+  top: -150px;
+  left: 40px;
+
+}
+
+.facts-container {
+  height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.grid-6 {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.facts img {
+  width: 100%;
+  height: 100%;
+}
+
+.facts .secondary,
+.facts img {
+  margin-bottom: 80px;
+}
+
+.below-facts {
+  position: absolute;
+  bottom: 0px;
+  margin-left: 600px;
+}
+
+.below-facts img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 45px;
+}
+
+.below-facts h3 {
+  font-size: 23px;
+  color: black;
+  text-align: center;
+}
+
+.below-facts h1 {
+  font-size: 80px;
+  color:#57CC99;
+  font-family: "Sedgwick Ave Display", cursive;
+  text-align: center;
+}
+
+.final-section {
+  background-color: #57CC99;
+  height: 2000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mobile {
+  padding: 20px 20px;
+  margin: 0 auto;
+  color: black;
+}
+.image {
+  height: 600px;
+}
+
+.mobile-text hr {
+  width: 50%;
+  margin-left: 0;
+  color: white;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+}
+
+.accordion {
+  width: 800px;
+  margin: 90px auto;
+  color: black;
+  background-color: white;
+  padding: 45px 200px;
+}
+
+.accordion .contentBox {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: #57CC99;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: '>';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 600px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion hr {
+  width: 80%;
+  margin-left: 0;
+}
+
+.accordion .contentBox.active .content {
+  height: 150px;
+}
+
+.hand {
+  margin: 0 auto;
+  width: 1000px;
+}
+.grid-uneven {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand img {
+  height: 100%;
+}
